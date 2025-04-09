@@ -1,21 +1,27 @@
 import React from 'react';
+import './header.css'
+import { GiGluttonousSmile } from "react-icons/gi";
 
 function Header() {
   return (
     <header className="site-header">
-      <div className="container">
+      <div className="HeaderInnercontainer">
         <div className="logo">MangaSite</div>
         <nav className="main-nav">
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#" className="active">Hot</a></li>
-            <li><a href="#">New</a></li>
-            <li><a href="#">Genres</a></li>
+            <li>Home</li>
+            <li>Hot</li>
+            <li>New</li>
+            <li>Genres</li>
           </ul>
         </nav>
         <div className="search-area">
           <input type="search" placeholder="Search manga..." />
           <button type="submit">Search</button>
+        </div>
+
+        <div className="profilePicture">
+          <GiGluttonousSmile/>
         </div>
       </div>
     </header>

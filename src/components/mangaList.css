@@ -1,0 +1,23 @@
+.page-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: #fff;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .manga-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 1.5rem;
+    padding: 0 1rem;
+  }
+  
+  .loading-text {
+    grid-column: 1 / -1;
+    text-align: center;
+    color: #ccc;
+    font-size: 1rem;
+  }
+  

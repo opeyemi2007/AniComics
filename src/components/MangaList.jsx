@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import MangaCard from './MangaCard';
+import './mangaList.css'
 
 // --- Placeholder Data ---
 // In a real app, this would come from an API call inside useEffect
@@ -29,7 +30,7 @@ function MangaList() {
 
 
   return (
-    <> {/* Using React Fragment to avoid unnecessary div */}
+    <>
       <h1 className="page-title">Hot Manga Updates</h1>
       <div className="manga-grid">
         {mangaData.length > 0 ? (
@@ -37,7 +38,7 @@ function MangaList() {
             <MangaCard key={manga.id} manga={manga} />
           ))
         ) : (
-          <p>Loading manga or no manga found...</p> // Handle loading/empty state
+          <p>Loading manga or no manga found...</p>
         )}
       </div>
     </>
